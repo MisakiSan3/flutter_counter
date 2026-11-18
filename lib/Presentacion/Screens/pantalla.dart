@@ -9,7 +9,7 @@ class Pantalla extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text("Pantalla M"))
+      body: Center(child: Text("Pantalla "))
 
     );
   }
