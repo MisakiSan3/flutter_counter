@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 
-class PantallaEstevenViracocha extends StatelessWidget {
+class PantallaMateoNavas extends StatelessWidget {
 
-  const PantallaEstevenViracocha({super.key});
+  const PantallaMateoNavas({super.key});
 
   @override
   Widget build(BuildContext context) {
