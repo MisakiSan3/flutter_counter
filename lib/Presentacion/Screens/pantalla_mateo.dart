@@ -1,23 +1,15 @@
 import 'package:flutter/material.dart';
 
-class NumberInput extends StatelessWidget {
-  final int value;
 
-  const NumberInput({
-    super.key,
-    required this.value,
-  });
+class PantallaEstevenViracocha extends StatelessWidget {
+
+  const PantallaEstevenViracocha({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      key: ValueKey(value),
-      initialValue: value.toString(),
-      readOnly: true,
-      textAlign: TextAlign.center,
-      decoration: const InputDecoration(
-        border: OutlineInputBorder(),
-      ),
+    return Scaffold(
+      body: Center(child: Text("Pantalla Mateo"))
+
     );
   }
-}
+} 
