@@ -1,23 +1,21 @@
 import 'package:flutter/material.dart';
 
-class NumberInput extends StatelessWidget {
-  final int value;
+class CounterButton extends StatelessWidget {
+  final IconData icon;
+  final VoidCallback onPressed;
 
-  const NumberInput({
+  const CounterButton({
     super.key,
-    required this.value,
+    required this.icon,
+    required this.onPressed,
   });
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      key: ValueKey(value),
-      initialValue: value.toString(),
-      readOnly: true,
-      textAlign: TextAlign.center,
-      decoration: const InputDecoration(
-        border: OutlineInputBorder(),
-      ),
+    return IconButton(
+      icon: Icon(icon),
+      iconSize: 35,
+      onPressed: onPressed,
     );
   }
 }
